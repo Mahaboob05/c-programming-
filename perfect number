@@ -1,0 +1,28 @@
+#include<stdio.h>
+int isperfect(int num)
+{
+	int i,sum=0;
+	for(i = 1 ; i <=num /2; i++)
+	{
+		if(num%i==0)
+		{
+			sum+=i;
+		}
+	}
+	return (sum == num);
+}
+int main( )
+{
+	int num,i;
+	printf("enert number=");
+	scanf("%d",&num);
+	printf("list of perfect numbers from %d to %d are \n",1,num);
+	for(i=1;i<=num;i++)
+	{
+		if(isperfect(i))
+		{
+			printf("%d",i);
+		}
+	}
+	return 0;
+}
