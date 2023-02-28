@@ -1,0 +1,45 @@
+#include <stdio.h>
+/* Function to print hollow rectangle*/
+void hollow_rectangle(int n, int m)
+{
+int i, j;
+for (i = 1; i <= n; i++)
+{
+for (j = 1; j <= m; j++)
+{
+if (i==1 || i==n || j==1 || j==m)
+printf(“*”);
+else
+printf(” “);
+}
+printf(“n”);
+}
+}
+int main()
+int rows, columns;
+printf(“nEnter the number of rows : “);
+scanf(“%d”, &rows);
+printf(“nEnter the number of columns : “);
+scanf(“%d”, &columns);
+printf(“n”);
+hollow_rectangle(rows, columns);
+return 0;
+}
+3.half pyramid star
+
+// C program to print half pyramid pattern using stars
+#include <stdio.h>
+int main()
+{
+int i, j,n;
+scanf(“%d”,&n);
+for(i = 0; i < n; i++)
+{
+for(j = 0; j <= i; j++)
+{
+printf(“*”);
+}
+printf(“\n”);
+}
+return 0;
+}
