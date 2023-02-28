@@ -1,0 +1,18 @@
+#include<stdio.h>
+int main( )
+{
+	float principle,rate,sinterest;
+	int time;
+	printf("enter principle amount,rate %% per annum and time\n");
+	scanf("%f %f %d",&principle,&rate,&time);
+	sinterest=(principle*rate*time)/100.0;
+	printf("principle amount=%5.2f%\n",principle);
+	printf("rate %% per annum =%5.2f%\n",rate);
+	printf("time =%d years\n",time);
+	printf("simple inerest =%5.2f\n",sinterest);
+}
+Footer
+© 2023 GitHub, Inc.
+Footer navigation
+Terms
+Privacy
